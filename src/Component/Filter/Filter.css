@@ -1,0 +1,11 @@
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterContainer img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}

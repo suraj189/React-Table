@@ -1,0 +1,44 @@
+.pagination-container {
+    background-color: #F9F8FF;
+    border: 0 1px 1px 1px solid #DDE3EE;
+    padding: 8px 12px;
+}
+
+.pagination-container , .pagination-controls ,.leftSection , .rightSection ,.entries-per-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entries-per-page {
+    gap:12px;
+}
+
+ .showing,.length {
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+.length {
+   color: #212121;
+}
+.pagination-controls {
+    gap: 24px;
+}
+
+.pagination-container img {
+    width: 25.5px;
+    height: 25.5px;
+    cursor: pointer;
+}
+
+
+
+.pagination-container select {
+    border: 1px solid #DDE3EE ;
+    padding: 8px 16px;
+    border-radius: 4px;
+}

@@ -1,0 +1,222 @@
+.entriesTable {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+.tableContainer {
+    width: 100%;
+    margin: auto;
+    overflow: scroll;
+    border: 1px solid #DDE3EE
+}
+
+.tablePanel {
+    padding: 12px;
+    background-color: #DDE3EE;
+
+}
+
+.tableHead .row {
+    height: 40px;
+}
+
+.row .colHeading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #DDE3EE;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    position: relative;
+    min-width: 200px;
+}
+
+.row .colHeading:not(:last-child) {
+    border-right: 1px solid #DDE3EE;
+}
+
+.resizer {
+    cursor: col-resize;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10px;
+    /* Adjust as needed */
+}
+
+.row {
+    display: flex;
+}
+
+
+.tableBody .row .entriesCell:not(:last-child) {
+    border-right: 1px solid #DDE3EE;
+}
+
+.actionColumn {
+    position: sticky !important;
+    right: 0;
+    background-color: #fff;
+    border-left: 1px solid #DDE3EE;
+    z-index: 1;
+    width: 60px;
+    /* Adjust the width as needed */
+    min-width: 117px !important;
+    /* Ensure a minimum width */
+}
+
+
+.actionColumn img {
+    width: 20px;
+    /* Adjust as needed */
+    cursor: pointer;
+}
+
+.actionIcon {
+    width: 32px;
+    height: 32px;
+}
+
+
+.actionMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    left: -200px;
+    border: 1px solid #DDE3EE;
+
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14);
+}
+
+.actionCell {
+    position: relative;
+    ;
+}
+
+.entriesCell {
+    display: flex;
+    gap: 8px;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    font-weight: 400;
+    min-width: 200px;
+}
+
+.entriesCell .value {
+    overflow: hidden;
+    margin: inherit !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entriesCell .value span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.workflow_Stages {
+    justify-content: center;
+    align-items: center;
+}
+
+.version {
+    justify-content: flex-end;
+}
+
+.info {
+    cursor: pointer;
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.circleicon {
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #475161;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.tag .value {
+    width: 100%;
+}
+
+.name {
+    display: block;
+    color: #475161;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.modified_at .value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Custom checkbox styling */
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+
+}
+
+.checkbox-input {
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.checkbox-custom::before {
+    content: '\2713';
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.checkbox-input:checked+.checkbox-custom::before {
+    display: block;
+}
+.checkbox-input:checked+.checkbox-custom {
+    background-color: #6C5CE7;
+    border-color: #6C5CE7;
+}
+
+.row:hover {
+    background-color:  #F7F9FC;
+}
+
+.noEntries {
+    text-align: center;
+    padding: 10px ;
+}

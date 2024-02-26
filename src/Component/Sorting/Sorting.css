@@ -1,0 +1,11 @@
+.sortingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sortingContainer img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
