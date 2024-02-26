@@ -108,7 +108,6 @@ const Table: React.FC = () => {
 
 
   const handleEntriesPerPageChange = useCallback((entriesPerPage: number) => {//for changing the entries
-    console.log('enenen')
     const entrieCell=document.getElementsByClassName('entriesCell') as HTMLCollectionOf<HTMLElement>
     const colHeading = document.getElementsByClassName('colHeading') as HTMLCollectionOf<HTMLElement>
     for (let i = 0; i < colHeading.length; i++) {
